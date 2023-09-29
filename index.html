@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleContent()">Toggle Content</button>
+    <div id="content" class="hidden">
+        <p>This is the hidden content.. appear and disappear..</p>
+    </div>
+    <script>
+        function toggleContent() {
+            var contentDiv = document.getElementById("content");
+
+           
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+            } else {
+                contentDiv.style.display = "none";
+            }
+        }
+    </script>
+   
+</body>
+</html>
+
+
